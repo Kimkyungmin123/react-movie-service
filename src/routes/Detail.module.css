@@ -11,7 +11,7 @@
     height: 100%;
     display: flex;
     justify-content: center;   
-    padding: 50px 100px;
+
 }
 
 .movies{
@@ -21,6 +21,5 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    /* width: 80%;
-    padding-top: 70x; */
+
 }

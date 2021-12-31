@@ -30,9 +30,11 @@ return(
             <Element
             runtime ={datas.runtime}
             coverImg ={datas.medium_cover_image}
+            originalImg={datas.background_image_original}
             likeCount ={datas.like_count}
             descriptionIntro ={datas.description_intro}
             title ={datas.title}
+            
 
             />
             </div>

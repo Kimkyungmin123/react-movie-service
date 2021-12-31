@@ -6,13 +6,13 @@ import styles from "./Movie.module.css";
 function Movie({id, year, coverImg, title, genres,synopsis}){
     return(
         <div className={styles.movie}>
-            <img src={coverImg} alt={title} className={styles.movie__img}/>
+            <Link to={`/movie/${id}`}><img src={coverImg} alt={title} className={styles.movie__img}/></Link>
             <div>
                 <h2 className={styles.movie__title}>
                     <Link to={`/movie/${id}`}>{title}</Link>
                 </h2>
                 <h3 className={styles.movie__year}>{year}</h3>
-                <p>{synopsis.length > 235 ? `${synopsis.slice(0,235)}...` : synopsis } </p>
+                <p  className={styles.movie__synopsis}>{synopsis.length > 235 ? `${synopsis.slice(0,235)}...` : synopsis } </p>
                 
                 
                 <ul className={styles.movie__genres}>

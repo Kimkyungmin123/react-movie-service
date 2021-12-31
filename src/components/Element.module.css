@@ -1,32 +1,101 @@
+
+.movie__originalImg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+
+    min-height: 100%;
+    filter: brightness(50%);
+    
+    
+}
+
 .movie{
-    background-color: white;
+    position: absolute;
+    top: 20%;
+    z-index: 8;
+
+    display: flex;
+    align-items: center;
+
+    bottom: 10%;
+right: 10%;
+left: 10%;
+    background-color: rgba(255, 255, 255, 0.842);
     margin-bottom: 70px;
     font-weight: 300;
-    width: 900px;
+
     padding: 100px;
-    border-radius: 5px;
-    color: #adaeb9;
+    border-radius: 18px;
+    color: #5092e9;
     text-decoration: none;
     color: inherit;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-        0 8px 16px -8px rgba(0, 0, 0,0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.25);
+    0 8px 16px -8px rgba(0, 0, 0,0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
 
 
 }
-
-
+.movie:hover{
+    background-color: #f1f1f1;
+}
+.movie__home a{
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.842);
+    transition: 0.5s;
+    text-decoration-line: none;
+    
+    
+}
+.movie__home a:hover{
+    color: #2c82e4;
+}
 .movie__img{
 
-    display: flex;
-    border-radius: 5px;
+    border-radius: 18px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0,0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.25);
 
 }
 
-.movie__runTime{
+
+.movie__title{
+    color: #2c82e4;
+    font-weight: bolder;
+    font-size: 22px;
     display: flex;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    max-width: 230px;
+    
 }
-.movie__like{
+.movie__descriptionIntro{
+    color: rgb(88, 88, 88);
+}
+.movie__description span{
+    color: #2c82e4;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.movie__description{
+    margin-left: 70px;
+}
+
+.movie__etc{
+
     display: flex;
+    justify-content:space-evenly;
+    padding: 10px;
+    color: rgb(88, 88, 88);
+    border: solid 3px #2c82e42d;
+    border-radius: 18px;
+    
+
 }
