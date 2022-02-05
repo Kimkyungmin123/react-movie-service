@@ -16,12 +16,15 @@ function Movie({id, year, coverImg, title, genres,synopsis}){
                 
                 
                 <ul className={styles.movie__genres}>
-                    {genres.map((g) =>(
-                    <li key={g}>
-                    {g}
-                    </li>
+                    {/* {genres.map((genre)=>(
+                        <li key={genre}>
+                        {genre}
+                        </li>
                     
-                    ))}
+                    ))} */}
+                <p>
+                {genres+ " "}
+                </p>
                 </ul>
             </div>
         </div>
@@ -31,7 +34,7 @@ function Movie({id, year, coverImg, title, genres,synopsis}){
 Movie.propTypes ={
     id :PropTypes.number.isRequired,
     year:PropTypes.number.isRequired,
-    summary:PropTypes.string.isRequired,
+    //summary:PropTypes.string.isRequired,
     coverImg :PropTypes.string.isRequired,
     title:PropTypes.string.isRequired,
 

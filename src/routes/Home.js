@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner  } from '@fortawesome/free-solid-svg-icons';
 
 function Home(){
     const [loading, setLoading] =useState(true);
@@ -20,7 +22,12 @@ return(
     <div className={styles.container}>
         {loading ? (
         <div className={styles.loader}>
-            <span>loading...</span>
+            <span>loading... </span>
+            
+            <FontAwesomeIcon
+                                icon={faSpinner} 
+                                className={styles.icon}
+                                />
             </div> 
         ): (
             <div className={styles.movies}>

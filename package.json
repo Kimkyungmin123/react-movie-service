@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@fortawesome/react-fontawesome": "^0.1.17",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -42,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Kimkyungmin123.github.io/react-movie-service"
+  "homepage": "https://kimkyungmin123.github.io/react-movie-service/"
 }

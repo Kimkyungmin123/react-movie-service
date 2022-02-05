@@ -2,6 +2,8 @@ import { useEffect ,useState} from "react";
 import {useParams} from "react-router-dom";
 import Element from "../components/Element";
 import styles from "./Detail.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner  } from '@fortawesome/free-solid-svg-icons';
 
 
 function Detail(){
@@ -23,7 +25,11 @@ return(
     <div className={styles.container}>
         {loading ? (
         <div className={styles.loader}>
-        <span>Loading...</span>
+        <span>Loading...</span>  <FontAwesomeIcon
+                                icon={faSpinner} 
+                                className={styles.icon}
+                                />
+        
         </div>
         ):(
             <div className={styles.movies}>
@@ -34,7 +40,7 @@ return(
             likeCount ={datas.like_count}
             descriptionIntro ={datas.description_intro}
             title ={datas.title}
-            
+            url={datas.url}
 
             />
             </div>

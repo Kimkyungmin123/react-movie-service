@@ -19,6 +19,16 @@
     width: 80%;
     padding-top: 70x;
 }
+.loader{
+    color: #4d9df8;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.icon{
+    color: #2c82e4;
+}
 
 @media screen and (max-width:1090px){
     .movies{

@@ -65,16 +65,20 @@
     display: flex;
     flex-wrap: wrap;
     margin: 5px 0px;
+    letter-spacing:1.2px;
+
 }
 
 .movie__synopsis{
     color:rgb(88, 88, 88);
 }
 
-.movie__genres li,
+
+.movie__genres p,
 .movie__year{
     margin-right: 10px;
     font-size: 14px;
     color: #025fc9d5;
     font-weight: bolder;
+
 }

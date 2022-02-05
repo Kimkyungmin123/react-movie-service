@@ -37,6 +37,24 @@ left: 10%;
 
 
 }
+.movie a {
+text-decoration: none;
+transition: 0.2s;
+}
+.movie a:hover{
+    font-weight: bolder;
+}
+.movie a span{
+
+transition: 0.2s;
+}
+
+.movie a span:hover{
+    
+    color: #898b9e;
+ 
+
+}
 .movie:hover{
     background-color: #f1f1f1;
 }
