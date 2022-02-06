@@ -117,3 +117,19 @@ transition: 0.2s;
     
 
 }
+@media screen and (max-width:1040px){
+    .movie__description{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:900px){
+    .movie__description{
+        display: none;
+    }
+    .movie div{
+        text-align: center;
+        margin: auto;
+
+    }
+  
+}

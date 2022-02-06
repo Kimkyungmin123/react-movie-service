@@ -82,3 +82,34 @@
     font-weight: bolder;
 
 }
+@media (min-width:1090px) and (max-width:1400px){
+    .movie__synopsis{
+        display: none;
+    }
+    .movie__title a{
+        font-size: 17px;
+    }
+    .movie__genres p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:600px){
+    .movie{
+        text-align: center;
+        margin: auto;
+        /* grid-template-columns: minmax(10px, 1fr); */
+    }
+    .movie__img{
+        text-align: center;
+        margin: auto;
+    }
+    .movie__synopsis{
+        display: none;
+    }
+    .movie__genres{
+        display: none;
+    }
+    .movie__title a{
+        font-size: 15px;
+    }
+} 

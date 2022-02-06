@@ -4,7 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
+    color: #4d9df8;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .container{
@@ -13,11 +15,7 @@
     justify-content: center;   
 
 }
-.loader{
-    color: #4d9df8;
-    font-weight: bold;
-    font-size: 25px;
-}
+
 
 .movies{
     width: 100%;
