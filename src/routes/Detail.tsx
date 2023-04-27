@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import Element from "../components/Element";
+import { Link, useParams } from "react-router-dom";
 import styles from "./Detail.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { DetailedMovieData } from "types/response";
+import DetailCard from "src/components/card/detailCard";
 
 function Detail() {
   const { id } = useParams();
@@ -17,13 +17,12 @@ function Detail() {
         `${process.env.REACT_APP_API}movie_details.json?movie_id=${id}`
       )
     ).json();
-    setDatas(json.data.movies);
+    setDatas([...datas, json.data.movie]);
     setLoading(false);
   };
 
   useEffect(() => {
     getMovie();
-    console.log(id);
   }, []);
 
   return (
@@ -35,12 +34,23 @@ function Detail() {
         </div>
       ) : (
         <div className={styles.movies}>
+          {
+            <img
+              className={styles.movie__originalImg}
+              src={datas[0].background_image_original}
+              alt="배경 이미지"
+            />
+          }
+          <div className={styles.movie__home}>
+            <Link to={`/react-movie-service/`}>
+              <span>HOME</span>
+            </Link>
+          </div>
           {datas.map((data) => (
-            <Element
+            <DetailCard
               key={data.id}
               runtime={data.runtime}
-              coverImg={data.medium_cover_image}
-              originalImg={data.background_image_original}
+              coverImg={data.medium_cover_image || ""}
               likeCount={data.like_count}
               descriptionIntro={data.description_intro}
               title={data.title}

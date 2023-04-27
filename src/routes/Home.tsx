@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Movie from "../components/Movie";
 import styles from "./Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { MovieData } from "types/response";
+import MainCard from "src/components/card/mainCard";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -32,7 +32,7 @@ function Home() {
       ) : (
         <div className={styles.movies}>
           {movies.map((movie) => (
-            <Movie
+            <MainCard
               id={movie.id}
               key={movie.id}
               year={movie.year}
