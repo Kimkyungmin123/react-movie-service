@@ -3,14 +3,15 @@ import Movie from "../components/Movie";
 import styles from "./Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { MovieData } from "types/response";
 
 function Home() {
   const [loading, setLoading] = useState(true);
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState<MovieData[]>([]);
   const getMovies = async () => {
     const json = await (
       await fetch(
-        `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year`
+        `${process.env.REACT_APP_API}list_movies.json?minimum_rating=8.5&sort_by=year`
       )
     ).json();
     setMovies(json.data.movies);
@@ -19,6 +20,7 @@ function Home() {
   useEffect(() => {
     getMovies();
   }, []);
+
   return (
     <div className={styles.container}>
       {loading ? (
