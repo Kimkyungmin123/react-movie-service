@@ -1,0 +1,17 @@
+.card__img {
+  border-radius: 18px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.25);
+}
+
+.main {
+  max-width: 150px;
+  min-height: 225px;
+  border-radius: 18px;
+  width: 100%;
+}
+
+.detail {
+  min-width: 230px;
+  min-height: 345px;
+}
