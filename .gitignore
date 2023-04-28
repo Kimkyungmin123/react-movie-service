@@ -3,5 +3,9 @@ node_modules
 
 #yarn
 .yarn
+
 #env
 .env
+
+# production
+/build
