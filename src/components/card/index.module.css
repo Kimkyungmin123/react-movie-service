@@ -88,7 +88,8 @@
 /* detailCard */
 .detailCard {
   display: flex;
-  width: 100%;
+  padding: 50px 100px 50px 100px;
+  /* width: 100%; */
   align-items: center;
   color: #5092e9;
 }
@@ -172,5 +173,28 @@
   .detailCard div {
     text-align: center;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .detailCard {
+    padding: 40px 50px 0 50px;
+  }
+
+  .detailCard__title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .detailCard {
+    padding: 40px 10px 0 10px;
+  }
+
+  .detailCard__title {
+    font-size: 14px;
+  }
+  .detailCard__etc {
+    display: none;
   }
 }

@@ -45,3 +45,11 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .movies {
+    padding: 50px 10px 0 10px;
+    text-align: center;
+    margin: auto;
+  }
+}
