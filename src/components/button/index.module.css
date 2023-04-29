@@ -1,0 +1,13 @@
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.clear {
+  background-color: transparent;
+}
