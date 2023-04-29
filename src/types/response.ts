@@ -1,3 +1,12 @@
+export interface AllMovies {
+  data: {
+    limit: number;
+    movie_count: number;
+    movies: MovieData[];
+    page_number: number;
+  };
+}
+
 export interface MovieData {
   id: number;
   year: number;
